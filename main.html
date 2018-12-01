@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 
 <html class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>RPS</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./main.css" />
-  </head>
-  <body>
-    <h1 class="greeting">Welcome to RPS</h1>
-    <div class="buttons">
-      <button id="rock">
-        <img
-          src="./images/rock.jpg"
-          alt="Rock Image"
-          style="width:128px;height:128px;"
-        />
-      </button>
-      <button id="paper">
-        <img
-          src="./images/paper.jpg"
-          alt="Paper Image"
-          style="width:128px;height:128px;"
-        />
-      </button>
-      <button id="scissors">
-        <img
-          src="./images/scissors.jpg"
-          alt="Scissors Image"
-          style="width:128px;height:128px;"
-        />
-      </button>
-    </div>
 
-    <h2 class="user">Player:</h2>
-    <div id="user-choice"></div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>RPS</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./main.css" />
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+</head>
 
-    <h2 class="computer">Computer:</h2>
-    <div id="computer-choice"></div>
+<body>
+  <h1 class="greeting">Welcome to RPS</h1>
+  <div class="buttons">
+    <button id="rock">
+      <img src="./images/rock.jpg" alt="Rock Image" style="width:128px;height:128px;" />
+    </button>
+    <button id="paper">
+      <img src="./images/paper.jpg" alt="Paper Image" style="width:128px;height:128px;" />
+    </button>
+    <button id="scissors">
+      <img src="./images/scissors.jpg" alt="Scissors Image" style="width:128px;height:128px;" />
+    </button>
+  </div>
 
-    <h1 id="result"></h1>
-    <footer></footer>
-    <script src="./js/index.js" async defer></script>
-  </body>
+  <h2 class="user">Player:</h2>
+  <div id="user-choice"></div>
+
+  <h2 class="computer">Computer:</h2>
+  <div id="computer-choice"></div>
+
+  <h1 id="result"></h1>
+  <footer></footer>
+  <script src="./js/index.js" async defer></script>
+</body>
+
 </html>
