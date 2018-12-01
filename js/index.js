@@ -1,3 +1,5 @@
+//document.addEventListener("DOMContentLoaded", () => {
+
 const rockDiv = document.querySelector("#rock");
 const paperDiv = document.querySelector("#paper");
 const scissorsDiv = document.querySelector("#scissors");
@@ -67,3 +69,4 @@ scissorsDiv.addEventListener("click", function () {
     result.innerHTML = `You Lose! ${computerString} beats ${userString}.`;
   }
 });
+//});

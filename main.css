@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.greeting {
+  margin: 1em;
+  padding: 1em;
+}
+
+.container {
+  margin: 1em;
+  padding: 1em;
+}
+
+#play-btn {
+  margin: 1em;
+  padding: 1em;
+}
+
+
+#computer-container {
+  margin: 1em;
+  padding: 1em;
+}
+
+#user-container {
+  margin: 1em;
+  padding: 1em;
+}
+
+#result {
+  margin: 1em;
+  padding: 1em;
+}
