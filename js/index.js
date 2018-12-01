@@ -1,11 +1,24 @@
-const rockDiv = document.getElementById("rock");
-const paperDiv = document.getElementById("paper");
-const scissorsDiv = document.getElementById("scissors");
-const userChoice = document.getElementById("user-choice");
-const computerChoice = document.getElementById("computer-choice");
+const rockDiv = document.querySelector("#rock");
+const paperDiv = document.querySelector("#paper");
+const scissorsDiv = document.querySelector("#scissors");
+const userChoice = document.querySelector("#user-choice");
+const computerChoice = document.querySelector("#computer-choice");
 const result = document.getElementById("result");
 const choiceArray = ["rock", "paper", "scissors"];
 let random = "";
+const playBtn = document.querySelector("#play-btn");
+const gameContainer = document.querySelector(".container")
+let playGame = false;
+
+playBtn.addEventListener("click", () => {
+  // hide & seek with the container div
+  playGame = !playGame;
+  if (playGame) {
+    gameContainer.style.display = "block";
+  } else {
+    gameContainer.style.display = "none";
+  }
+});
 
 function handleComputerChoice() {
   random = choiceArray[Math.floor(Math.random() * choiceArray.length)];
